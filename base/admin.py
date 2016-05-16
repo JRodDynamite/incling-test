@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.db.models import Count
 
-from .models import Classroom, Student, School
+from .models import Classroom, School, Student
 
 
 class StudentInline(admin.TabularInline):
