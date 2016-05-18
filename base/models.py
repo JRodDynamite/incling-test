@@ -20,11 +20,8 @@ class Classroom(models.Model):
 
 
 class Student(models.Model):
-    name = models.CharField(max_length=30)
+    name = models.CharField(max_length=30, unique=True)
     classroom = models.ForeignKey(Classroom, on_delete=models.CASCADE)
-
-    class Meta:
-        unique_together = ('name', 'classroom',)
 
     def __str__(self):
         return self.name
