@@ -12,7 +12,6 @@ My submission for the Django Test:
 ##Features
 
 0. The imports in the code are all sorted alphabetially using `isort`.
-
 0. The code is PEP8 compliant. Checked using `flake8`.
 
 ##Installation
